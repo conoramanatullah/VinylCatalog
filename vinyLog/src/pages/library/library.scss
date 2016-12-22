@@ -1,0 +1,21 @@
+page-library {
+  #libraryNavigation {
+    display: flex;
+    flex-direction: row;
+    span {
+      font-weight: 200;
+      font-size: 1.5em;
+      text-align: center;
+      flex-grow: 1;
+      margin-bottom: 10px;
+    }
+  }
+  #libraryContent {
+    display: flex;
+    flex-direction: row;
+  }
+  ion-fab {
+    bottom: 2vh;
+    right: 2vh;
+  }
+}

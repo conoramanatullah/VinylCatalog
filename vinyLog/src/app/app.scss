@@ -25,9 +25,9 @@
 #logoutButton {
   position: absolute;
   bottom: 0;
-  font-size: 1.5em;
   color: white;
   height: 10vh;
   width: 98%;
   background-color: color($colors, danger);
+  @include card(2);
 }

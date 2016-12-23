@@ -11,8 +11,18 @@ page-library {
     }
   }
   #libraryContent {
-    display: flex;
-    flex-direction: row;
+    #recentlyAdded {
+      font-size: .8em;
+      color: grey;
+      right: 20px;
+    }
+    .item {
+      img{
+        margin-bottom: -1vh;
+        max-width: 100%;
+      }
+      @include card(1);
+    }
   }
   ion-fab {
     bottom: 2vh;

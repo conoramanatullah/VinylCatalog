@@ -2,8 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { LibraryPage } from '../pages/library/library';
-import { ManageLibraryPage } from '../pages/manage-library/manage-library';
 import { AddRecordPage } from '../pages/add-record/add-record';
+import { SearchPage } from '../pages/search/search';
+import { ProfilePage } from '../pages/profile/profile';
+import { SettingsPage } from '../pages/settings/settings';
 
 
 @Component({
@@ -21,8 +23,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'My Library', component: LibraryPage }
-      // { title: 'Page Two', component: Page2 }
+      { title: 'My Library', component: LibraryPage },
+      { title: 'Profile', component: ProfilePage },
+      { title: 'Settings', component: SettingsPage }
     ];
 
   }

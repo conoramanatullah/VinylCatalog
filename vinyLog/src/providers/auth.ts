@@ -13,8 +13,7 @@ export class Auth {
       this.authState = state;
       console.log(this.authState);
     });
-
-
+    
   }
   // Methods
   get authenticated(): boolean {

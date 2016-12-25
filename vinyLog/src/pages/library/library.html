@@ -22,20 +22,42 @@
   </div>
   <hr>
   <div id="libraryContent">
-    <div id="recentlyAdded">recently added</div>
     <ion-grid>
       <ion-row>
-        <ion-col width-50>
-          <div class="item">
-            <img src="assets/placeholder/album1.jpg" alt="">
-          </div>
-        </ion-col>
-        <ion-col width-50>
-          <div class="item">
-            <img src="assets/placeholder/album2.jpg" alt="">
+        <ion-col width-100>
+          <div class="item-large">
+            <ion-grid>
+              <ion-row id="stats-bar">
+                <ion-col class="count" width-33>
+                  <div class="count-number">
+                    189
+                  </div>
+                  <div class="count-detail">
+                    Records
+                  </div>
+                </ion-col>
+                <ion-col class="count" width-33>
+                  <div class="count-number">
+                    65
+                  </div>
+                  <div class="count-detail">
+                    Artists
+                  </div>
+                </ion-col>
+                <ion-col class="count" width-33>
+                  <div class="count-number">
+                    22
+                  </div>
+                  <div class="count-detail">
+                    Genres
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
           </div>
         </ion-col>
       </ion-row>
+      <div id="recentlyAdded">recently added</div>
       <ion-row>
         <ion-col width-50>
           <div class="item">
@@ -43,11 +65,27 @@
           </div>
         </ion-col>
         <ion-col width-50>
-          <div class="item">
+          <div class="item-detailed">
+            <span>Albums</span>
             <img src="assets/placeholder/album2.jpg" alt="">
           </div>
         </ion-col>
       </ion-row>
+      <ion-row>
+        <ion-col width-50>
+          <div class="item-detailed">
+            <span>Artists</span>
+            <img src="assets/placeholder/sw.jpg" alt="">
+          </div>
+        </ion-col>
+        <ion-col width-50>
+          <div class="item-detailed">
+            <span>Genres</span>
+            <img src="assets/placeholder/wiz.jpg" alt="">
+          </div>
+        </ion-col>
+      </ion-row>
+
     </ion-grid>
   </div>
   <ion-fab>

@@ -6,6 +6,19 @@
   </ion-header>
 
   <ion-content>
+    <div id="profile">
+      <div id="avatar">
+        <img src="../assets/placeholder/wiz.jpg" alt="">
+      </div>
+      <div id="text">
+        <span id="name">
+          Wiz Khalifa
+        </span>
+        <span flex></span>
+        <!-- <span style=""><ion-icon name="settings"></ion-icon></span> -->
+      </div>
+    </div>
+    <hr>
     <ion-list id="sideMenu">
       <button class="menuItem" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}

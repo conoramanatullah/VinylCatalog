@@ -15,11 +15,33 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 #sideMenu {
+
   .menuItem {
     font-size: 1.5em;
     font-weight: 200;
     color: grey;
     padding: 15px;
+  }
+}
+#profile {
+  width: 100%;
+  #avatar {
+    margin: 5vw;
+    width: 25vw;
+    height: 25vw;
+    // Include some responsiveness for larger screens
+    img {
+      border-radius: 50%;
+      max-width: 100%;
+      @include card(1);
+    }
+  }
+  #text {
+    margin: 5vw;
+    #name {
+      font-size: 1.1em;
+      font-weight: 200;
+    }
   }
 }
 #logoutButton {
